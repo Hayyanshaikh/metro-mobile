@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--roboto-font);
 }
 
 *:focus {
@@ -13,16 +14,27 @@
 }
 
 :root {
-  --font-thin: 100;
-  --font-light: 300;
-  --font-regular: 400;
-  --font-bold: 700;
-  --font-black: 900;
+  --roboto-font: "Roboto", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+  --phosphor-thin-font: "Phosphor-Thin" !important;
+  --phosphor-light-font: "Phosphor-Light" !important;
+  --phosphor-normal-font: "Phosphor" !important;
+  --phosphor-bold-font: "Phosphor-Bold" !important;
+  --phosphor-fill-font: "Phosphor-Fill" !important;
+  --phosphor-duotone-font: "Phosphor-Duotone" !important;
+  --weight-thin: 100;
+  --weight-extra-light: 200;
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+  --weight-black: 900;
+  --primary: #7f44e8;
+  --secondary: #4169E1;
   --white: #ffffff;
-  --black: #000000;
-  --text: #7f7f7f;
-  --primary: #d52b1e;
-  --secondary: #ffd449;
+  --black: #121212;
 }
 
 p,
@@ -37,7 +49,8 @@ h4,
 h5,
 h6 {
   margin-bottom: 0;
-  font-weight: var(--font-bold);
+  font-weight: var(--weight-bold);
+  font-family: var(--poppins-font);
 }
 
 figure {
@@ -55,4 +68,166 @@ figure img {
 
 section {
   padding: 60px 0;
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 3px;
+  font-weight: var(--weight-medium);
+}
+
+/* header */
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-md,
+.navbar>.container-sm,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+  justify-content: unset;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  grid-gap: 5px;
+  padding: 0px;
+  padding-inline: 12px !important;
+  font-size: 14px;
+  color: var(--black);
+  font-weight: var(--weight-medium);
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+  margin-top: 20px;
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+  background: var(--white);
+}
+
+.dropdown-toggle::after {
+  content: '\E136';
+  border: none !important;
+  margin: 0;
+  font-family: var(--phosphor-bold-font);
+}
+
+.specialNav .nav-link i {
+  font-size: 18px;
+}
+
+.btn-easy-pay,
+.btn-my-account {
+  padding: 10px;
+  color: var(--white);
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-easy-pay {
+  background-color: #A55D02;
+}
+
+.btn-easy-pay:hover {
+  color: var(--white);
+  background-color: #8E4A00;
+}
+
+.btn-my-account {
+  background-color: #9C27B0;
+}
+
+.btn-my-account:hover {
+  color: var(--white);
+  background-color: #7B1FA2;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 5px;
+  background: var(--primary);
+  border: none;
+  color: var(--white);
+}
+
+.offcanvas-body {
+  padding: 0;
+  overflow: unset;
+  justify-content: space-between;
+}
+
+.offcanvas-header {
+  background-color: var(--bs-gray-100);
+  border-bottom: 1px solid var(--bs-gray-200);
+}
+
+.menu_offcanvas {
+  flex: 1;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  .menu_offcanvas {
+    max-width: 320px;
+  }
+
+  .nav-link {
+    padding: 10px 20px !important;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: var(--weight-medium);
+  }
+
+  .nav-link:after {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .specialNav {
+    padding-block: 15px;
+    border-block: 1px solid var(--bs-gray-200);
+    background-color: var(--bs-gray-100);
+  }
+
+  .specialNav .nav-link {
+    font-size: 16px;
+    justify-content: flex-start;
+  }
+
+  .specialNav .nav-link:after {
+    margin-left: auto;
+  }
+
+  .btn-easy-pay,
+  .btn-my-account {
+    flex: 1;
+  }
+
+  .navbar .dropdown-menu {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+
+  .navbar .dropdown-menu .dropdown-item {
+    color: var(--black);
+    font-weight: var(--weight-medium);
+  }
+
+  .offcanvas-body {
+    overflow: auto;
+  }
 }

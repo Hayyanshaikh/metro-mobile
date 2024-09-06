@@ -6,5 +6,5 @@ $(function() {
 
 const convertToOffcanvas = () => {
   const menu = $("#menu");
-  $(window).width() < 992 ? menu.addClass('offcanvas offcanvas-end') : menu.removeClass('offcanvas offcanvas-start');
+  $(window).width() < 1200 ? menu.addClass('offcanvas offcanvas-end') : menu.removeClass('offcanvas offcanvas-start');
 }

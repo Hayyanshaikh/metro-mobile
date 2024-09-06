@@ -1,4 +1,5 @@
 $(function() {
+    convertToOffcanvas();
   $(window).resize(function() {
     convertToOffcanvas();
   }).trigger('resize');
@@ -10,7 +11,8 @@ $(function() {
       nextEl: ".deal_section .swiper-button-next",
       prevEl: ".deal_section .swiper-button-prev",
     },
-  });var swiper = new Swiper(".benifit_product_slider", {
+  });
+  var swiper = new Swiper(".benifit_product_slider", {
     slidesPerView: "auto",
     spaceBetween: 30,
     navigation: {

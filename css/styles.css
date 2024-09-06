@@ -490,6 +490,7 @@ footer {
 }
 
 .about-section{
+  padding: 0 30px;
   background-color: var(--primary);
 }
 
@@ -614,6 +615,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .about-section-list{
+    padding: 0;
+  }
   .benifit_card {
     padding: 20px;
   }

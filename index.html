@@ -21,101 +21,172 @@
 
 <body>
   <!-- Header -->
-  <nav class="navbar navbar-expand-xl bg-white">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/brand/logo.svg" alt="Metro by T-Mobile">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
-        <i class="ph-bold ph-list"></i>
-      </button>
-      <div id="menu" class="menu_offcanvas">
-        <div class="offcanvas-header d-flex d-xl-none">
-          <a class="navbar-brand" href="#">
-            <img src="images/brand/logo.svg" alt="Metro by T-Mobile">
-          </a>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body navbar-collapse">
-          <ul class="navbar-nav me-xl-0 me-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="plansDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Plans
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="plansDropdown">
-                <li><a class="dropdown-item" href="#">Plan 1</a></li>
-                <li><a class="dropdown-item" href="#">Plan 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="phonesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Phones & Devices
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="phonesDropdown">
-                <li><a class="dropdown-item" href="#">Phone 1</a></li>
-                <li><a class="dropdown-item" href="#">Phone 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dealsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Deals
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dealsDropdown">
-                <li><a class="dropdown-item" href="#">Deal 1</a></li>
-                <li><a class="dropdown-item" href="#">Deal 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Coverage</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="whyMetroDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Why Metro
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="whyMetroDropdown">
-                <li><a class="dropdown-item" href="#">Reason 1</a></li>
-                <li><a class="dropdown-item" href="#">Reason 2</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="navbar-nav specialNav me-auto ms-xl-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="ph-fill ph-storefront"></i>
-                <span>Find a store</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                <i class="ph-fill ph-chat"></i>
-                <span>Help</span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="whyMetroDropdown">
-                <li><a class="dropdown-item" href="#">Reason 1</a></li>
-                <li><a class="dropdown-item" href="#">Reason 2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="ph-fill ph-shopping-cart"></i>
-                <span>Cart</span>
-              </a>
-            </li>
-            <li class="nav-item d-none d-xl-flex">
-              <a class="nav-link" href="#">
-                <i class="ph-bold ph-magnifying-glass"></i>
-                <span>Search</span>
-              </a>
-            </li>
-          </ul>
-          <div class="d-flex align-items-center p-2 p-xl-0">
-            <a class="btn btn-easy-pay ms-2" href="#">Easy pay</a>
-            <a class="btn btn-my-account ms-2" href="#">My account</a>
+  <header>
+    <nav class="navbar navbar-expand-xl bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/brand/logo.svg" alt="Metro by T-Mobile">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+          <i class="ph-bold ph-list"></i>
+        </button>
+        <div id="menu" class="menu_offcanvas">
+          <div class="offcanvas-header d-flex d-xl-none">
+            <a class="navbar-brand" href="#">
+              <img src="images/brand/logo.svg" alt="Metro by T-Mobile">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body navbar-collapse">
+            <ul class="navbar-nav me-xl-0 me-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="plansDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plans
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="plansDropdown">
+                  <li><a class="dropdown-item" href="#">Plan 1</a></li>
+                  <li><a class="dropdown-item" href="#">Plan 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="phonesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Phones & Devices
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="phonesDropdown">
+                  <li><a class="dropdown-item" href="#">Phone 1</a></li>
+                  <li><a class="dropdown-item" href="#">Phone 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dealsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Deals
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dealsDropdown">
+                  <li><a class="dropdown-item" href="#">Deal 1</a></li>
+                  <li><a class="dropdown-item" href="#">Deal 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coverage</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="whyMetroDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Why Metro
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="whyMetroDropdown">
+                  <li><a class="dropdown-item" href="#">Reason 1</a></li>
+                  <li><a class="dropdown-item" href="#">Reason 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav specialNav me-auto ms-xl-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="ph-fill ph-storefront"></i>
+                  <span>Find a store</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  <i class="ph-fill ph-chat"></i>
+                  <span>Help</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="whyMetroDropdown">
+                  <li><a class="dropdown-item" href="#">Reason 1</a></li>
+                  <li><a class="dropdown-item" href="#">Reason 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="ph-fill ph-shopping-cart"></i>
+                  <span>Cart</span>
+                </a>
+              </li>
+              <li class="nav-item d-none d-xl-flex">
+                <a class="nav-link" href="#">
+                  <i class="ph-bold ph-magnifying-glass"></i>
+                  <span>Search</span>
+                </a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center p-2 p-xl-0">
+              <a class="btn btn-easy-pay ms-2" href="#">Easy pay</a>
+              <a class="btn btn-my-account ms-2" href="#">My account</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <section class="hero">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 py-3 hero_top_row mb-5">
+            <p class="text-center text-white small">No Activation Fee & Free Shipping when you buy online. No activation fee on select phones in-store.</p>
+          </div>
+          <div class="col-12 mb-4">
+            <h1 class="hero_heading text-white text-center">Welcome to no-nonsense wireless.</h1>
+          </div>
+          <div class="col-lg-6">
+            <div class="card hero_card">
+              <figure class="card-img">
+                <img src="https://t-mobile.scene7.com/is/image/Tmusprod/byod-25-lifestyle%3A1-to-1-ratio?ts=1723305754482&dpr=off" alt="">
+              </figure>
+              <div class="card-body">
+                <p class="card-text hero_card_badge">BRING YOUR PHONE</p>
+                <hgroup>
+                  <h3 class="card-title">Get one line with all the data you need for $25/mo.</h3>
+                  <p class="card-text">Pay $30/mo. for your first month and $25/mo. after with AutoPay.</p>
+                </hgroup>
+                <a href="#" class="btn btn-primary">Get the details</a>
+                <a href="#" class="link">Tell me more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column gap-4">
+            <div class="card hero_small_card">
+              <div class="row h-100 align-items-center g-0">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <hgroup>
+                      <h5 class="card-title">Shop feature-packed plans.</h5>
+                    <p class="card-text">Sign up for one of our Metro Flex plans and get benefits like Amazon Prime and more.</p>
+                    </hgroup>
+                    <a href="#" class="btn">Explore deals</a>
+                  </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                  <figure class="card-img">
+                    <img src="https://t-mobile.scene7.com/is/image/Tmusprod/Metro-Flex_Logo_Screen_Vert_PRI_RGB_on-W?ts=1723130692077&dpr=off" alt="...">
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="card hero_small_card">
+              <div class="row h-100 align-items-center g-0">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <hgroup>
+                      <h5 class="card-title">Great deals on  5G phones.</h5>
+                    <p class="card-text">Choose from the brands you want like Samsung, Motorola, REVVL, and more.</p>
+                    </hgroup>
+                    <a href="#" class="btn">Explore deals</a>
+                  </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                  <figure class="card-img">
+                    <img src="https://t-mobile.scene7.com/is/image/Tmusprod/revvl-7_moto-g-power-5g_samsung-galaxy-a35-5G_3-up1-1?ts=1722980479527&fmt=png-alpha&qlt=100,0&op_usm=1.75,0.3,2,0&dpr=off" alt="...">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- script files -->
   <script type="text/javascript" src="./plugins/swiper-11.1.4/swiper.min.js"></script>
   <script type="text/javascript" src="./plugins/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>

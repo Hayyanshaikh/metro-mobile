@@ -1,5 +1,5 @@
 $(function() {
-    convertToOffcanvas();
+  convertToOffcanvas();
   $(window).resize(function() {
     convertToOffcanvas();
   }).trigger('resize');
@@ -18,6 +18,22 @@ $(function() {
     navigation: {
       nextEl: ".benefits .swiper-button-next",
       prevEl: ".benefits .swiper-button-prev",
+    },
+  });
+
+  var swiper = new Swiper('.page-3-slider', {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
   });
 });

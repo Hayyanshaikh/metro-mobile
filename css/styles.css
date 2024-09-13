@@ -618,7 +618,7 @@ footer {
   padding: 40px;
 }
 
-.video-card img{
+.video-card img {
   width: 50px;
   aspect-ratio: 1;
   margin-inline: auto;
@@ -979,50 +979,131 @@ footer {
   font-size: 16px;
 }
 
-.benifit_banner_card_2{
+.benifit_banner_card_2 {
   background-color: var(--primary);
 }
 
-.benifit_banner_card_2 .btn{
+.benifit_banner_card_2 .btn {
   background-color: var(--white);
   color: var(--black);
 }
 
 /* download-banner */
-.download-banner{
+.download-banner {
   background-color: var(--primary);
 }
+
 .download-banner-logo {
-    height: 100px;
-    margin-inline: auto;
-    margin-bottom: 20px;
+  height: 100px;
+  margin-inline: auto;
+  margin-bottom: 20px;
 }
 
 .download-banner-logo img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .store-button {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 150px;
-    background: transparent;
-    border: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background: transparent;
+  border: none;
 }
 
 .store-button img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
-.bg-primary{
+.bg-primary {
   background-color: var(--primary) !important;
 }
-.bg-primary-dark{
+
+.bg-primary-dark {
   background-color: var(--primary-bg) !important;
 }
+
+/* login */
+.metro-flex-login .form-label {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.form-control {
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border: 1px solid var(--primary) !important;
+}
+
+.forgot-account {
+  color: var(--primary-bg);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.metro-flex-login {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.login ul li {
+  margin-bottom: 5px;
+}
+
+.login small {
+  font-size: 14px;
+}
+
+.login small a {
+  color: var(--primary);
+}
+
+.autopay {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  background: var(--primary-bg);
+}
+
+.autopay-heading {
+  color: var(--white);
+  font-weight: 500;
+  font-size: clamp(20px, 2vw, 22px);
+}
+
+.autopay-text {
+  font-size: 14px;
+  color: var(--bs-gray-400);
+}
+
+.autopay a {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+br{
+  width: 100%;
+  border-block: 2px solid var(--bs-gray-600);
+}
+
 /* responsive */
 @media (max-width: 1200px) {
   .menu_offcanvas {
